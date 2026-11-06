@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 520px; margin: 40px auto; padding: 0 16px; }
+      form { display: flex; gap: 8px; }
+      input { flex: 1; padding: 8px; }
+      button { padding: 8px 12px; cursor: pointer; }
+      li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #ddd; }
+      #status { color: #888; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <h1>Notes App</h1>
+    <p id="status"></p>
+    <form id="form">
+      <input id="text" placeholder="Write a note..." />
+      <button>Add</button>
+    </form>
+    <ul id="list"></ul>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
